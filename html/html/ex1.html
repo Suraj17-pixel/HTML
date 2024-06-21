@@ -1,0 +1,46 @@
+</head>
+<body>
+
+<div class="container">
+    <h2>School Registration Form</h2>
+    <form action="submit_registration.php" method="post">
+        <table>
+            <tr>
+                <th><label for="student_name">Student Name:</label></th>
+                <td><input type="text" id="student_name" name="student_name" required></td>
+            </tr>
+            <tr>
+                <th><label for="parent_name">Parent/Guardian Name:</label></th>
+                <td><input type="text" id="parent_name" name="parent_name" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone Number:</label></th>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <th><label for="grade">Grade:</label></th>
+                <td>
+                    <select id="grade" name="grade" required>
+                        <option value="1">Grade 1</option>
+                        <option value="2">Grade 2</option>
+                        <option value="3">Grade 3</option>
+                        <!-- Add more grade options as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="comments">Additional Comments:</label></th>
+                <td><textarea id="comments" name="comments" rows="4"></textarea></td>
+            </tr>
+        </table>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
